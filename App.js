@@ -1,11 +1,11 @@
 import { StatusBar } from "expo-status-bar";
-import HomeScreen from "./src/Screens/Home";
+import Login from "./src/Screens/Login";
 import { NativeBaseProvider, Text, Box } from "native-base";
 
 export default function App() {
   return (
     <NativeBaseProvider>
-      <HomeScreen />
+      <Login />
     </NativeBaseProvider>
   );
 }
