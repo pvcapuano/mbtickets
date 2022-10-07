@@ -9,8 +9,7 @@ import {
 } from "native-base";
 import React from "react";
 import Colors from "../color";
-import { MaterialIcons } from "@expo/vector-icons";
-import { Ionicons } from "@expo/vector-icons";
+import { MaterialIcons, Ionicons } from "@expo/vector-icons";
 
 const Login = () => {
   return (
@@ -43,6 +42,7 @@ const Login = () => {
             pl={3}
             color={Colors.white}
             borderBottomColor={Colors.underline}
+            type="text"
           />
 
           {/* password */}
@@ -69,11 +69,13 @@ const Login = () => {
           bg={Colors.white}
         >
           <Text color={Colors.main} bold>
-            Login
+            LOGIN
           </Text>
         </Button>
         <Pressable mt={4}>
-          <Text color={Colors.deepestGray}>Cadastre-se</Text>
+          <Text bold color={Colors.deepestGray}>
+            CADASTRE-SE
+          </Text>
         </Pressable>
       </Box>
     </Box>
