@@ -1,18 +1,47 @@
-import { Box, Center, Text } from "native-base";
+import { Box, Button, Center, HStack, ScrollView, Text } from "native-base";
 import React from "react";
 import Colors from "../color";
 import CartEmpty from "../data/Components/CartEmpty";
+import CartItems from "../data/Components/CartItems";
 
 const Cart = () => {
   return (
     <Box flex={1} safeAreaTop bg={Colors.subPurple}>
       <Center w="full" py={5}>
-        <Text color={Colors.black} fontSize={20} bold>
+        <Text color={Colors.white} fontSize={24} bold>
           Carrinho
         </Text>
       </Center>
       {/* se o carrinho estiver vazio */}
-      <CartEmpty />
+      {/*  <CartEmpty /> */}
+      {/* itens do carrinho */}
+      <ScrollView>
+        <CartItems />
+        <Center mt={5}>
+          <HStack
+            rounded={50}
+            justifyContent="space-between"
+            bg={Colors.white}
+            shadow={2}
+            w="90%"
+            pl={5}
+            h={45}
+            alignItems="center"
+          >
+            <Text>Total</Text>
+            <Button
+              px={10}
+              h={45}
+              rounded={50}
+              bg={Colors.main}
+              _text={{ color: Colors.white, fontWeight: "semibold" }}
+              _pressed={{ bg: Colors.main }}
+            >
+              R$400
+            </Button>
+          </HStack>
+        </Center>
+      </ScrollView>
     </Box>
   );
 };
