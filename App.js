@@ -1,10 +1,10 @@
-import SingleProduct from "./src/Screens/SingleProduct";
 import { NativeBaseProvider, Text, Box } from "native-base";
+import Cart from "./src/Screens/Cart";
 
 export default function App() {
   return (
     <NativeBaseProvider>
-      <SingleProduct />
+      <Cart />
     </NativeBaseProvider>
   );
 }
