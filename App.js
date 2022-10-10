@@ -1,10 +1,11 @@
 import { NativeBaseProvider } from "native-base";
-import Payment from "./src/Screens/Payment";
+
+import PlaceOrder from "./src/Screens/PlaceOrder";
 
 export default function App() {
   return (
     <NativeBaseProvider>
-      <Payment />
+      <PlaceOrder />
     </NativeBaseProvider>
   );
 }
