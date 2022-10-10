@@ -56,8 +56,8 @@ const renderItems = (data) => (
         </VStack>
         <Center>
           <Button
-            bg={Colors.main}
-            _pressed={{ bg: Colors.main }}
+            bg={Colors.green}
+            _pressed={{ bg: Colors.green }}
             _text={{ color: Colors.white }}
           >
             5

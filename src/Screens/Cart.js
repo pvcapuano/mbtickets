@@ -1,6 +1,7 @@
 import { Box, Button, Center, HStack, ScrollView, Text } from "native-base";
 import React from "react";
 import Colors from "../color";
+import ButtonWidth from "../data/Components/ButtonWidth";
 import CartEmpty from "../data/Components/CartEmpty";
 import CartItems from "../data/Components/CartItems";
 
@@ -33,13 +34,19 @@ const Cart = () => {
               px={10}
               h={45}
               rounded={50}
-              bg={Colors.main}
+              bg={Colors.green}
               _text={{ color: Colors.white, fontWeight: "semibold" }}
-              _pressed={{ bg: Colors.main }}
+              _pressed={{ bg: Colors.green }}
             >
               R$400
             </Button>
           </HStack>
+        </Center>
+
+        <Center px={5}>
+          <ButtonWidth bg={Colors.green} color={Colors.white} mt={10}>
+            CONTINUAR
+          </ButtonWidth>
         </Center>
       </ScrollView>
     </Box>
