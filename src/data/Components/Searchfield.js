@@ -3,8 +3,10 @@ import React from "react";
 import Colors from "../../color";
 import { Pressable } from "react-native";
 import { FontAwesome5 } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const Searchfield = () => {
+  const navigation = useNavigation();
   return (
     <HStack
       space={3}
@@ -27,7 +29,7 @@ const Searchfield = () => {
           bg: Colors.white,
         }}
       />
-      <Pressable ml={3}>
+      <Pressable ml={3} onPress={() => navigation.navigate("Cart")}>
         <FontAwesome5 name="shopping-basket" size={28} color={Colors.white} />
         <Box
           px={1}

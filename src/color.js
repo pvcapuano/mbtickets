@@ -12,7 +12,7 @@ const Colors = {
   deepestGray: "#C4C4C4",
   blue: "#3B87F9",
   underline: "#E5E5E5",
-  paypal: "#FFB730",
+  payment: "#FFB730",
 };
 
 export default Colors;

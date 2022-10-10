@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import {
   Box,
   Heading,
@@ -12,20 +13,22 @@ import NumericInput from "react-native-numeric-input";
 import Colors from "../color";
 import ButtonWidth from "../data/Components/ButtonWidth";
 
-const SingleProduct = () => {
+const SingleProduct = ({ route }) => {
   const [value, setValue] = useState(0);
+  const navigation = useNavigation();
+  const product = route.params;
   return (
     <Box safeArea flex={1} bg={Colors.white}>
       <ScrollView px={5} showsVerticalScrollIndicator={false}>
         <Image
-          source={require("../../assets/images/produto.png")}
+          source={{ uri: product.image }}
           alt="Image"
           w="full"
           h={300}
           resizeMode="contain"
         />
         <Heading bold fontSize={15} mb={2} lineHeight={22}>
-          Palestra Javascript
+          {product.name}
         </Heading>
         <HStack space={2} alignItems="center" my={5}>
           <NumericInput
@@ -46,16 +49,19 @@ const SingleProduct = () => {
           />
           <Spacer />
           <Heading bold color={Colors.black} fontSize={19}>
-            R$400
+            R${product.price}
           </Heading>
         </HStack>
         <Text lineHeight={24} fontSize={12}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
+          {product.description}
         </Text>
 
-        <ButtonWidth bg={Colors.main} color={Colors.white} mt={10}>
+        <ButtonWidth
+          bg={Colors.main}
+          color={Colors.white}
+          mt={10}
+          onPress={() => navigation.navigate("Cart")}
+        >
           ADICIONAR AO CARRINHO
         </ButtonWidth>
       </ScrollView>

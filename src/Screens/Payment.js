@@ -14,11 +14,12 @@ import {
 import Colors from "../color";
 import ButtonWidth from "../data/Components/ButtonWidth";
 import { Ionicons, FontAwesome } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const paymentMethodes = [
   {
-    label: require("../../assets/images/picpay.png"),
-    alt: "picpay",
+    label: require("../../assets/images/pix.png"),
+    alt: "pix",
     icon: "Ionicons",
   },
   {
@@ -32,13 +33,14 @@ const paymentMethodes = [
     icon: "FontAwesome",
   },
   {
-    label: require("../../assets/images/pix.png"),
-    alt: "pix",
+    label: require("../../assets/images/picpay.png"),
+    alt: "picpay",
     icon: "FontAwesome",
   },
 ];
 
 const Payment = () => {
+  const navigation = useNavigation();
   return (
     <Box flex={1} safeAreaTop bg={Colors.main} py={5}>
       <Center pb={15}>
@@ -80,7 +82,12 @@ const Payment = () => {
                 )}
               </HStack>
             ))}
-            <ButtonWidth bg={Colors.main} color={Colors.white} mt={5}>
+            <ButtonWidth
+              onPress={() => navigation.navigate("Placeorder")}
+              bg={Colors.main}
+              color={Colors.white}
+              mt={5}
+            >
               CONTINUAR
             </ButtonWidth>
           </VStack>

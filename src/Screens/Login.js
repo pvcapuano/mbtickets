@@ -11,7 +11,7 @@ import React from "react";
 import Colors from "../color";
 import { MaterialIcons, Ionicons } from "@expo/vector-icons";
 
-const Login = () => {
+const Login = ({ navigation }) => {
   return (
     <Box flex={1} bg={Colors.main}>
       <Box
@@ -67,12 +67,13 @@ const Login = () => {
           w="80%"
           rounded={50}
           bg={Colors.white}
+          onPress={() => navigation.navigate("Bottom")}
         >
           <Text color={Colors.main} bold>
             LOGIN
           </Text>
         </Button>
-        <Pressable mt={4}>
+        <Pressable mt={4} onPress={() => navigation.navigate("Register")}>
           <Text bold color={Colors.deepestGray}>
             CADASTRE-SE
           </Text>

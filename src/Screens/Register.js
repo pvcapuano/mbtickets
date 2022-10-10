@@ -11,7 +11,7 @@ import {
 import Colors from "../color";
 import { MaterialIcons, Ionicons, FontAwesome } from "@expo/vector-icons";
 
-const Register = () => {
+const Register = ({ navigation }) => {
   return (
     <Box flex={1} bg={Colors.main}>
       <Box
@@ -79,12 +79,13 @@ const Register = () => {
           w="80%"
           rounded={50}
           bg={Colors.white}
+          onPress={() => navigation.navigate("Bottom")}
         >
           <Text color={Colors.main} bold>
             CADASTRAR
           </Text>
         </Button>
-        <Pressable mt={4}>
+        <Pressable mt={4} onPress={() => navigation.navigate("Login")}>
           <Text bold color={Colors.deepestGray}>
             LOGIN
           </Text>

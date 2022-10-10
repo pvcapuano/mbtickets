@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import {
   Box,
   Center,
@@ -31,6 +32,7 @@ const ShippingInputs = [
 ];
 
 const Shipping = () => {
+  const navigation = useNavigation();
   return (
     <Box flex={1} safeAreaTop bg={Colors.main} py={5}>
       <Center pb={15}>
@@ -66,7 +68,12 @@ const Shipping = () => {
                 />
               </FormControl>
             ))}
-            <ButtonWidth bg={Colors.main} color={Colors.white} mt={5}>
+            <ButtonWidth
+              onPress={() => navigation.navigate("Checkout")}
+              bg={Colors.main}
+              color={Colors.white}
+              mt={5}
+            >
               CONTINUAR
             </ButtonWidth>
           </VStack>
