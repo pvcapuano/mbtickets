@@ -18,7 +18,7 @@ const OrdersInfos = [
   {
     title: "Total",
     price: 150.0,
-    color: "green",
+    color: "main",
   },
 ];
 
@@ -29,11 +29,11 @@ const PlaceOrderModel = () => {
     <Center>
       <ButtonWidth
         onPress={() => setShowModel(true)}
-        bg={Colors.black}
-        color={Colors.white}
+        bg={Colors.white}
+        color={Colors.black}
         mt={5}
       >
-        TOTAL
+        FINALIZAR
       </ButtonWidth>
       <Modal isOpen={showModel} onClose={() => setShowModel(false)} size="lg">
         <Modal.Content maxWidth={350}>
@@ -49,7 +49,7 @@ const PlaceOrderModel = () => {
                 >
                   <Text fontWeight="medium">{i.title}</Text>
                   <Text
-                    color={i.color === "green" ? Colors.green : Colors.black}
+                    color={i.color === "main" ? Colors.main : Colors.black}
                     bold
                   >
                     R${i.price}
@@ -61,7 +61,7 @@ const PlaceOrderModel = () => {
           <Modal.Footer>
             <Button
               flex={1}
-              bg={Colors.green}
+              bg={Colors.black}
               h={45}
               _text={{
                 color: Colors.white,
@@ -71,7 +71,7 @@ const PlaceOrderModel = () => {
                 setShowModel(false);
               }}
               _pressed={{
-                bg: Colors.green,
+                bg: Colors.black,
               }}
             >
               FAZER O PEDIDO

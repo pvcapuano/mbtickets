@@ -5,7 +5,7 @@ const Colors = {
   lightBlack: "#BCBCBC",
   orange: "#FFCE31",
   red: "#FF0000",
-  green: "#40CD28",
+  green: "#40cd28",
   gray: "#F4F4F4",
   subPurple: "#89609E",
   deepGray: "E1F0D7",

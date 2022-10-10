@@ -31,8 +31,8 @@ const PlaceOrder = () => {
           />
           <OrderInfo
             title="Entrega"
-            subTitle="Endereço"
-            text="Rua Um dois, nº 3, Rio de Janeiro/RJ"
+            subTitle="Rua Um dois, nº 3,"
+            text="Rio de Janeiro/RJ"
             icon={
               <Ionicons name="location-sharp" size={30} color={Colors.white} />
             }
