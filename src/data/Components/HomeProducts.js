@@ -22,10 +22,10 @@ const HomeProducts = () => {
         justifyContent="space-between"
         px={6}
       >
-        {products.map((product) => (
+        {products.map((product, index) => (
           <Pressable
             onPress={() => navigation.navigate("Single", product)}
-            key={product.id}
+            key={index}
             w="47%"
             bf={Colors.white}
             rounded="md"

@@ -60,7 +60,7 @@ const renderItems = (data) => (
             _pressed={{ bg: Colors.green }}
             _text={{ color: Colors.white }}
           >
-            5
+            1
           </Button>
         </Center>
       </HStack>

@@ -7,12 +7,12 @@ import { useNavigation } from "@react-navigation/native";
 const OrdersInfos = [
   {
     title: "Produtos",
-    price: 120.0,
+    price: 108.0,
     color: "black",
   },
   {
     title: "Frete",
-    price: 30.0,
+    price: 42.0,
     color: "black",
   },
   {
