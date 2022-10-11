@@ -21,14 +21,6 @@ Aplicativo para compra de ingressos para eventos e palestras feito em Reaact Nat
 ![image](https://user-images.githubusercontent.com/10540844/194970018-1e9f2865-b864-434c-b343-5ae77e3a8203.png)<br>
 <sub>App.js</sub>
 
-## Projeto em produção:
-
-<p>
- <a href="to-do-list-mvp-pi.vercel.app" target="_blank"> 
-  <img src="https://ml.globenewswire.com/Resource/Download/3a54c241-a668-4c94-9747-3d3da9da3bf2?size=2" alt="Vercel" width="100"/> 
- </a>
-</p>
-
 ## Tecnologias:
 
 * React Native
