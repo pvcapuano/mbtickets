@@ -19,7 +19,7 @@ Aplicativo para compra de ingressos para eventos e palestras feito em Reaact Nat
 <sub>Checkout</sub>
 
 ![image](https://user-images.githubusercontent.com/10540844/194970018-1e9f2865-b864-434c-b343-5ae77e3a8203.png)<br>
-<sub>App.js</sub>
+<sub>Código</sub>
 
 ## Tecnologias:
 
@@ -29,7 +29,7 @@ Aplicativo para compra de ingressos para eventos e palestras feito em Reaact Nat
 * React Native Tab View
 * React Native Swipe List
 * React Native Numeric Input
-* Expo CLI
+* Expo
 
 ## Objetivo:
 
